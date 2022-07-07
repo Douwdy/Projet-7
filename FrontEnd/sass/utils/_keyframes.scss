@@ -1,0 +1,17 @@
+@keyframes pressed {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes pressed-reverse {
+    0% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
