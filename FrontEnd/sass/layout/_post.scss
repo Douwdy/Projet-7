@@ -1,5 +1,10 @@
 #feed{
     margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .feed-post{
@@ -55,6 +60,43 @@
             height: 100%;
             width: 100%;
             border-radius: 1rem;
+        }
+    }
+    &-interactions{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px;
+        width: 100%;
+        border-radius: 1rem;
+        background: $color-shadow;
+        &__box:first-child{
+            @include flex-center;
+            padding: 7px;
+            width: 30%;
+            border-radius: 1rem;
+            font-size: 1.5em;
+            color: $color-thumbs-up;
+            &:hover{
+                transition: 0.5s ease;
+                cursor: pointer;
+                background-color: $color-thumbs-like;
+            }
+        }
+        &__box{
+            @include flex-center;
+            padding: 7px;
+            width: 30%;
+            border-radius: 1rem;
+            font-size: 1.5em;
+            color: $color-thumbs-up;
+            &:hover{
+                transition: 0.5s ease;
+                cursor: pointer;
+                background-color: $color-thumbs-dislike;
+            }
         }
     }
 }
