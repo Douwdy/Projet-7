@@ -1,4 +1,4 @@
-.container-register {
+.container-profile {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -18,14 +18,18 @@
             position: absolute;
             margin-top: -450px;
             @include flex-center;
-            height: 100px;
-            width: 100px;
+            height: 125px;
+            width: 125px;
             background-color: white;
             border-radius: 50%;
             img{
                 width: 90%;
                 height: 90%;
+                border-radius: 100%;
                 object-fit: cover;
+                &:hover{
+                    opacity: 0.5;
+                }
             }
         }
         &__back{

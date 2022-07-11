@@ -1,0 +1,51 @@
+.container-forum{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    &-left{
+        @include flex-center;
+        flex-direction: column;
+        background-color: $color-foreground;
+        height: 100vh;
+        width: 25vw;
+        &__user{
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: white;
+            height: 55px;
+            width: 90%;
+            border-radius: 75px;
+            &-avatar{
+                margin-top: 3px;
+                margin-left: 5px;
+                img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                }
+            }
+            &-name{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70%;
+                font-size: 1.1em;
+                font-weight: bold;
+                color: $color-tertiary;
+            }
+        }
+    }
+    &-middle{
+        background-color: $color-foreground;
+        height: 100vh;
+        width: 40vw;
+    }
+    &-right{
+        background-color: $color-foreground;
+        height: 100vh;
+        width: 25vw;
+    }
+}

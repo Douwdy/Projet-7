@@ -28,6 +28,17 @@
                 object-fit: cover;
             }
         }
+        &__back{
+            position: absolute;
+            margin-top: -340px;
+            margin-left: -490px;
+            @include flex-center;
+            font-size: 1.2em;
+            height: 30px;
+            width: 30px;
+            background-color: white;
+            border-radius: 50%;
+        }
         &-form{
             margin-top: 50px;
             height: 125px;
