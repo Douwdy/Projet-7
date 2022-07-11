@@ -1,4 +1,4 @@
-.container{
+.container-login {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
     &-frame{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 500px;
@@ -28,17 +28,25 @@
                 object-fit: cover;
             }
         }
-        &__paragraph{
-            margin-top: 100px;
-            color: white;
-            text-align: center;
-            font-size: 1.4em;
-        }
-        &__btns{
-            width: 400px;
+        &-form{
+            margin-top: 50px;
+            height: 125px;
             display: flex;
             align-items: center;
             justify-content: space-around;
+            flex-direction: column;
+            &__input{
+                padding-left: 20px;
+                height: 40px;
+                width: 300px;
+                border-radius: 40px;
+                color: $color-foreground;
+                border: none;
+                &:focus{
+                    outline: none;
+                    background: $color-secondary;
+                }
+            }
         }
     }
 }

@@ -2,6 +2,10 @@
     @include reset;
 }
 
+html{
+    background-color: $color-background;
+}
+
 a{
     text-decoration: none;
 }

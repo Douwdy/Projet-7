@@ -1,7 +1,9 @@
 .footer{
     @include flex-center;
+    position: fixed;
     height: 80px;
     width: 100vw;
     background-color: $color-tertiary;
     color: white;
+    bottom: 0px;
 }

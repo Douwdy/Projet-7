@@ -7,22 +7,52 @@
     font-size: 1.25em;
     position: absolute;
     border-radius: 10px;
-    height: 50px;
-    width: 130px;
+    height: 45px;
+    width: 150px;
     background: $color-primary;
     animation: pressed-reverse 0.5s both ease;
     &:hover{
         animation: pressed 0.5s both ease;
     }
     &-shadow{
-        height: 50px;
-        width: 130px;
+        height: 45px;
+        width: 150px;
         border-radius: 10px;
         padding-top: 5px;
-        background: $color-shadow;
+        background: $color-btn-shadow;
     }
     &-link{
         height: 50px;
         width: 150px;
+    }
+}
+
+.btn-connection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    position: absolute;
+    border-radius: 10px;
+    height: 45px;
+    width: 300px;
+    background: $color-primary;
+    animation: pressed-reverse 0.5s both ease;
+    &:hover{
+        animation: pressed 0.5s both ease;
+    }
+    &-shadow{
+        height: 45px;
+        width: 300px;
+        border-radius: 10px;
+        padding-top: 5px;
+        background: $color-btn-shadow;
+    }
+    &-link{
+        margin-top: 15px;
+        height: 50px;
+        width: 300px;
     }
 }
